@@ -17,8 +17,10 @@ void Screen2Presenter::deactivate()
 
 }
 
-void Screen2Presenter::systemSetSpeed()
+void Screen2Presenter::systemSet()
 {
-	std::cout << "Screen2Presenter systemSetSpeed" << model->getSpeed() << std::endl;
+	// std::cout << "Screen2Presenter systemSetSpeed" << model->getSpeed() << std::endl;
 	view.printSpeed(model->getSpeed());
+	view.printPower(model->getPower());
+	view.printCadence(model->getCadence());
 }

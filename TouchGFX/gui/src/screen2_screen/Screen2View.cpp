@@ -19,3 +19,13 @@ void Screen2View::printSpeed(int value){
 	Unicode::snprintf(speedTextBuffer, SPEEDTEXT_SIZE, "%d", value);
 	speedText.invalidate();
 }
+
+void Screen2View::printPower(int value){
+	Unicode::snprintf(powerTextBuffer, POWERTEXT_SIZE, "%d", value);
+	powerText.invalidate();
+}
+
+void Screen2View::printCadence(int value){
+	Unicode::snprintf(cadenceTextBuffer, CADENCETEXT_SIZE, "%d", value);
+	cadenceText.invalidate();
+}

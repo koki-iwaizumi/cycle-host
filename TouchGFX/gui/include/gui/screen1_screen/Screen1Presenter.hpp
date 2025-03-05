@@ -27,7 +27,7 @@ public:
 
     virtual ~Screen1Presenter() {}
 
-	virtual void systemSetSpeed();
+	virtual void systemSet();
 private:
     Screen1Presenter();
 

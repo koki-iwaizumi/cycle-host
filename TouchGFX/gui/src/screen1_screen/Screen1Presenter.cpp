@@ -18,7 +18,7 @@ void Screen1Presenter::deactivate()
 
 }
 
-void Screen1Presenter::systemSetSpeed()
+void Screen1Presenter::systemSet()
 {
-	std::cout << "Screen1resenter systemSetSpeed" << model->getSpeed() << std::endl;
+	std::cout << "Screen1resenter systemSet" << std::endl;
 }

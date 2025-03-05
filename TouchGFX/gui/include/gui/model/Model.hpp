@@ -14,9 +14,13 @@ public:
 	void tick();
 
 	int getSpeed() { return speed; };
+	int getPower() { return power; };
+	int getCadence() { return cadence; };
 protected:
 	ModelListener *modelListener;
 	int speed;
+	int power;
+	int cadence;
 };
 
 #endif // MODEL_HPP

@@ -12,7 +12,7 @@ public:
 	virtual ~ModelListener() {
 	}
 
-	virtual void systemSetSpeed() {
+	virtual void systemSet() {
 	}
 
 	void bind(Model *m) {

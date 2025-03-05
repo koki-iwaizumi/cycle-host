@@ -24,7 +24,7 @@ public:
 	 */
 	virtual void deactivate();
 
-	virtual void systemSetSpeed();
+	virtual void systemSet();
 
 	virtual ~Screen2Presenter() {
 	}

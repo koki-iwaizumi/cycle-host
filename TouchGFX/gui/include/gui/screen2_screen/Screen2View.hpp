@@ -13,6 +13,8 @@ public:
 	virtual void tearDownScreen();
 
 	void printSpeed(int value);
+	void printPower(int value);
+	void printCadence(int value);
 protected:
 };
 
