@@ -17,12 +17,14 @@ void Model::tick() {
 	if (uxQueueMessagesWaiting(msgQueueUI) > 0) {
 		BikeData newData;
 		xQueueReceive(msgQueueUI, &newData, 0);
-		if (speed == newData.speed && power == newData.power
-				&& cadence == newData.cadence) {
-			return;
-		}
+//		if (speed == newData.speed && power == newData.power
+//				&& cadence == newData.cadence) {
+//			return;
+//		}
 
-		std::cout << "Model " << speed << ", " << newData.speed << std::endl;
+		std::cout << "speed :" << newData.speed << ", " << "power :"
+				<< newData.power << ", " << "cadence :" << newData.cadence
+				<< std::endl;
 
 		speed = newData.speed;
 		power = newData.power;

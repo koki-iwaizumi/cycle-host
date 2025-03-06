@@ -71,7 +71,11 @@ void MX_I2C4_Init(void);
 #define FRAME_RATE_GPIO_Port GPIOJ
 
 /* USER CODE BEGIN Private defines */
-
+typedef struct {
+    uint16_t speed;
+    uint16_t power;
+    uint16_t cadence;
+} BikeData;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
